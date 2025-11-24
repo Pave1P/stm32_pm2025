@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pcb version="1.5.0">
+  <parts>
+    <part name="PIC16F877A" position="200,200">
+      <property name="Board">$PICSimLab_DIR/boards/PICGenios/board5.xml</property>
+      <property name="Firmware">ssd1306_spi.hex</property>
+      <property name="Frequency">20000000</property>
+    </part>
+    <part name="SSD1306" position="400,200">
+      <property name="Model">SSD1306</property>
+      <property name="Interface">SPI</property>
+      <property name="Width">128</property>
+      <property name="Height">64</property>
+    </part>
+  </parts>
+  <wires>
+    <wire part1="PIC16F877A" pin1="RB6" part2="SSD1306" pin2="CLK"/>
+    <wire part1="PIC16F877A" pin1="RB5" part2="SSD1306" pin2="DIN"/>
+    <wire part1="PIC16F877A" pin1="RA0" part2="SSD1306" pin2="CS"/>
+    <wire part1="PIC16F877A" pin1="RA1" part2="SSD1306" pin2="DC"/>
+    <wire part1="PIC16F877A" pin1="RA2" part2="SSD1306" pin2="RES"/>
+    <wire part1="PIC16F877A" pin1="VCC" part2="SSD1306" pin2="VCC"/>
+    <wire part1="PIC16F877A" pin1="GND" part2="SSD1306" pin2="GND"/>
+  </wires>
+</pcb>
