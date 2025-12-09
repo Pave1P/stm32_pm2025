@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<picsimlab>
+  <version>0.8.2</version>
+  <board type="5" name="Blue Pill (STM32F103C8T6)" />
+  <processor type="STM32F103C8" frequency="8000000" />
+  <file type="0" name="main.bin" path="./src/main.bin" />
+  <pins>
+    <pin name="PC13" function="GPIO" />
+  </pins>
+  <oscilloscope>
+    <channel pin="PC13" enabled="1" />
+  </oscilloscope>
+</picsimlab>
